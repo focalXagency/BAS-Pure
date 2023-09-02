@@ -255,13 +255,12 @@ a {
     width: 90%;
     margin: 100px auto;
     text-align: center;
-    z-index: -1 !important;
 }
 .FQ-Who-we .FQ-title-who-we-are .FQ-title
 {
     font-size: 6.5rem;
     margin: 0 auto 3rem auto ;
-    color: var(--white);
+    color: var(--Light-brown);
     font-weight: var(--font-wx4);
     font-family: var(--font-family);
 }
@@ -270,7 +269,7 @@ a {
     width: 65%;
     margin: 0 auto;
     font-size: 3.1rem;
-    color: var(--white);
+    color: var(--Light-brown);
     font-weight: var(--font-wx2);
     font-family: var(--font-family);
 }
@@ -283,12 +282,11 @@ a {
 {
     width: 100%;
     margin: 0 auto;
-    padding: 6rem 4rem 5.5rem 6rem;
+    padding: 5.5rem;
     position: relative;
     margin-bottom: 3rem;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),0px 4px 21px 6px rgba(0, 0, 0, 0.069);
-  background-color: var(--white);
-  }
+}
 .FQ-Who-we .FQ-3cards .FQ-cardes1 .FQ-top-left
 {
     position: absolute;
@@ -409,7 +407,7 @@ a {
     top: 0;
     left: 0;
   }
-  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip     /*////////*/
   {
     width: 39.5rem ;
     margin: auto ;
@@ -705,7 +703,7 @@ a {
 }
 
 .JI_ourTeam .JI_main_title_h1 {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .JI_ourTeam .JI_ourteam_slider_container {
@@ -1028,16 +1026,6 @@ footer .JI_footer_end_p {
   padding: 5.3rem 5%;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.FQ-blackback
-{
-  width: 100%;
-  background-color: var(--black);
-  height: 109rem;
-  position: absolute;
-  top: 118%;
-  z-index: -5;
-}
-
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* responsive */
@@ -1541,6 +1529,16 @@ footer .JI_footer_end_p {
 .JI_Partners .JI_Partners_slider .JI_Partners_slider_img {
   height: 4.1rem;
 }
+.JI_Partners.JI_Customers .JI_Partners_slider:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+@media(max-width: 992px) {
+  .JI_Partners.JI_Customers .JI_Partners_slider:not(:last-child) {
+    margin-bottom: 2.178rem;
+}
+}
+
+
 /* ************************************ */
 /* our team */
 .JI_ourTeam {
@@ -1699,9 +1697,6 @@ footer .JI_footer_box_for_more {
   {
       font-size: 1.8rem;
   }
-  .FQ-blackback
-  {
-    height: 78rem;
   }
 
 @media (max-width:440px){
@@ -1733,10 +1728,7 @@ footer .JI_footer_box_for_more {
     {
       margin-top: 3rem;
     }
-    .FQ-blackback
-  {
-    height: 89rem;
-  }
+    
   }
 
   /* //////////////////////////////////////////////// */
@@ -1830,7 +1822,7 @@ footer .JI_footer_box_for_more {
   .FQ-latest-projects .FQ-slide .FQ-slider 
   {
     width: 100%;
-    height: 62rem !important;
+    height: 54rem !important;
   }
   .slide-FQ.active 
   {
@@ -1899,9 +1891,4 @@ footer .JI_footer_box_for_more {
     {
       display: block;
     }
-    .FQ-blackback
-    {
-      height: 85rem;
-    }
-  }
 }

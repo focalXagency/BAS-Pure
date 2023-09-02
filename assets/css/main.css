@@ -8,6 +8,8 @@
   --Dark-grey2 : #383838b8;
   --primaray  : #2A1BB8 ;
   --white : #FFFBFE;
+  --white2 : #F4F4F4;
+  --white3 : #FDFDFD;
   --light-grey : #A7A7A7;
   --Light-brown : #a52a2a;
   --main-delay : .5s;
@@ -39,8 +41,9 @@
   
   body {
     background-color: #FFFBFE;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-
 
 
 
@@ -61,6 +64,7 @@
   font-size: 6.1rem;
   font-weight: 800;
   position: relative;
+  text-transform: capitalize;
 }
 .JI_main_title .JI_main_title_h1::after {
   position: absolute;
@@ -79,6 +83,10 @@
 
 
 @media (max-width : 992px) {
+  :root {
+    --width : 14.18rem;
+    --gap : 8.3%; 
+  }
   .JI_main_title {
     margin-bottom: 2.4rem;
   }
