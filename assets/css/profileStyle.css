@@ -257,7 +257,7 @@
 {
     .FQ-profile-caseSolution .FQ-introduction h2
     {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .FQ-profile-caseSolution .FQ-introduction p
     {
@@ -267,7 +267,7 @@
     {
         font-size: 1rem;
         top: -.7rem;
-        left: 75%;
+        left: 72%;
     }
 }
 
@@ -365,7 +365,7 @@
         font-size: 1.8rem;
     }
 }
-@media (max-width:476px)
+@media (max-width:520px)
 {
     .FQ-profile-caseSolution .FQ-solution h2
     {
