@@ -37,6 +37,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+    outline: 1px solid red;
   }
   
   body {
@@ -45,9 +46,8 @@
     overflow-x: hidden;
   }
 
-  ul {
-    list-style: none;
-  }
+
+
   .JI_container {
     width: 90%;
     margin: 0 auto;

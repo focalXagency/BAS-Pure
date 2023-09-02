@@ -4,9 +4,9 @@
     position: relative;
 
 }
-
-
-
+.JI_ourTeam .JI_main_title {
+    background-color: var(--black);
+}
 .JI_ourTeam .JI_main_title_h1 {
     color: var(--white);
 }
