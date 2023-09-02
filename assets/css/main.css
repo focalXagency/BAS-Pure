@@ -7,6 +7,7 @@
   --Dark-grey : #383838;
   --Dark-grey2 : #383838b8;
   --primaray  : #2A1BB8 ;
+  --primary  : #2A1BB8 ;
   --white : #FFFBFE;
   --white2 : #F4F4F4;
   --white3 : #FDFDFD;
@@ -73,6 +74,7 @@
   font-size: 2rem;
   font-weight: 400;
   text-transform: capitalize;
+  width: max-content;
 }
 .JI_main_title .JI_main_title_p {
   color: var(--dark-grey);
