@@ -255,12 +255,13 @@ a {
     width: 90%;
     margin: 100px auto;
     text-align: center;
+    z-index: -1 !important;
 }
 .FQ-Who-we .FQ-title-who-we-are .FQ-title
 {
     font-size: 6.5rem;
     margin: 0 auto 3rem auto ;
-    color: var(--Light-brown);
+    color: var(--white);
     font-weight: var(--font-wx4);
     font-family: var(--font-family);
 }
@@ -269,7 +270,7 @@ a {
     width: 65%;
     margin: 0 auto;
     font-size: 3.1rem;
-    color: var(--Light-brown);
+    color: var(--white);
     font-weight: var(--font-wx2);
     font-family: var(--font-family);
 }
@@ -282,11 +283,12 @@ a {
 {
     width: 100%;
     margin: 0 auto;
-    padding: 5.5rem;
+    padding: 6rem 4rem 5.5rem 6rem;
     position: relative;
     margin-bottom: 3rem;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),0px 4px 21px 6px rgba(0, 0, 0, 0.069);
-}
+  background-color: var(--white);
+  }
 .FQ-Who-we .FQ-3cards .FQ-cardes1 .FQ-top-left
 {
     position: absolute;
@@ -407,7 +409,7 @@ a {
     top: 0;
     left: 0;
   }
-  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip     /*////////*/
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip
   {
     width: 39.5rem ;
     margin: auto ;
@@ -1026,6 +1028,16 @@ footer .JI_footer_end_p {
   padding: 5.3rem 5%;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.FQ-blackback
+{
+  width: 100%;
+  background-color: var(--black);
+  height: 109rem;
+  position: absolute;
+  top: 118%;
+  z-index: -5;
+}
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* responsive */
@@ -1687,6 +1699,9 @@ footer .JI_footer_box_for_more {
   {
       font-size: 1.8rem;
   }
+  .FQ-blackback
+  {
+    height: 78rem;
   }
 
 @media (max-width:440px){
@@ -1718,7 +1733,10 @@ footer .JI_footer_box_for_more {
     {
       margin-top: 3rem;
     }
-    
+    .FQ-blackback
+  {
+    height: 89rem;
+  }
   }
 
   /* //////////////////////////////////////////////// */
@@ -1812,7 +1830,7 @@ footer .JI_footer_box_for_more {
   .FQ-latest-projects .FQ-slide .FQ-slider 
   {
     width: 100%;
-    height: 54rem !important;
+    height: 62rem !important;
   }
   .slide-FQ.active 
   {
@@ -1881,4 +1899,9 @@ footer .JI_footer_box_for_more {
     {
       display: block;
     }
+    .FQ-blackback
+    {
+      height: 85rem;
+    }
+  }
 }
