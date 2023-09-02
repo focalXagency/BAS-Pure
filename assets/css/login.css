@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.rm_loginContainer {
+    background-color: #1C1B1F;
+    height: 100vh;
+}
+
+.rm_loginContainer .rm_backIcon {
+    position: absolute;
+    right: 5.12%;
+    top: 70px;
+    cursor: pointer;
+}
+
+.rm_logCard {
+    margin: auto;
+    width: 514px;
+    color: white;
+    text-align: center;
+}
+
+.rm_loginContainer .rm_logCard .rm_logcard_img {
+    margin: 70px 0px 32px 0px;
+    width: 120px;
+}
+
+.rm_loginContainer .rm_logCard .rm_logCard_h5 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 16px;
+    color: #F4F4F4;
+}
+
+.rm_loginContainer .rm_logCard .rm_logCard_span {
+    font-size: 13px;
+    color: #D2D2D2;
+
+}
+
+.rm_loginContainer .rm_logCard .rm_loginTop {
+    margin-top: 42.73px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.rm_loginContainer .rm_logCard .rm_loginTop input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 16px 0px;
+    font-size: 1.3rem;
+}
+
+.rm_loginContainer .rm_logCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.rm_loginContainer .rm_logCard .rm_loginTop input::placeholder {
+    font-size: 13px;
+    color: #D2D2D2;
+
+}
+
+.rm_loginContainer .rm_logCard .rm_loginBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 16px;
+    gap: 36px;
+}
+
+.rm_loginContainer a , .rm_account {
+    color: #D2D2D2 !important;
+    font-size: 1.3rem;
+}
+
+.rm_loginContainer .rm_logCard .rm_loginBottom button {
+    background-color: white;
+    border: none;
+    padding: 8px 32px;
+    width: 201px;
+    border-radius: 4px;
+    height: 44px;
+    font-size: 1.6rem;
+}
+
+
+.rm_loginContainer .rm_logCard .rm_loginBottom .rm_loginBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+
+.rm_loginContainer .rm_imgDown {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* margin: 0 !important; */
+}
+
+
+
+.rm_containerr {
+    position: relative;
+    cursor: pointer;
+}
+
+.rm_containerr input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.rm_containerr p {
+    margin-left: 40px;
+    font-size: 13px;
+    color: #D2D2D2;
+    margin-top: 3px;
+
+}
+
+.rm_checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+}
+
+.rm_containerr:hover input~.rm_checkmark {
+    background-color: transparent;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.rm_containerr input:checked~.rm_checkmark {
+    background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.rm_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.rm_containerr input:checked~.rm_checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.rm_containerr .rm_checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #D2D2D2;
+    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+}
+.rm_imgDownMob{
+    display: none;
+}
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width:992px) and (min-width:302px){
+
+    .rm_loginContainer .rm_backIcon {
+        right: 5.56%;
+        top: 40px;
+        width: 23.999px;
+        height: 17.171px;
+    }
+
+    .rm_loginContainer .rm_logCard .rm_logcard_img {
+        margin: 40px 0px 32px 0px;
+        width: 70px;
+    }
+
+    .rm_loginContainer .rm_logCard .rm_logCard_h5 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .rm_logCard {
+        width: 253px;
+    }
+
+    .rm_loginContainer .rm_logCard .rm_logCard_span {
+        font-size: 12px;
+    }
+
+
+    .rm_loginContainer .rm_logCard .rm_loginTop {
+        margin-top: 75.41px;
+        gap: 32px;
+    }
+
+    .rm_loginContainer .rm_logCard .rm_loginTop input::placeholder {
+        font-size: 13px;
+    }
+
+    .rm_loginContainer .rm_logCard .rm_loginBottom button {
+        padding: 8px 32px;
+    }
+
+    .rm_loginContainer a {
+        font-size: 12px;
+    }
+
+    .rm_loginContainer .rm_imgDown {
+        display: none !important;
+    }
+
+    .rm_loginContainer .rm_imgDownMob {
+        display: flex !important;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+
+}
