@@ -191,22 +191,22 @@ point5.addEventListener("click", function () {
 });
 /* *************************************************************************** */
 
-document.querySelector("#my-nav-bar").addEventListener("scroll", function() {
-  // Find the section that is currently in view
-  let currentSection = document.querySelector("section:in-viewport");
+// document.querySelector("#my-nav-bar").addEventListener("scroll", function() {
+//   // Find the section that is currently in view
+//   let currentSection = document.querySelector("section:in-viewport");
 
-  // Find the corresponding nav item
-  let navItem = currentSection.querySelector("a");
+//   // Find the corresponding nav item
+//   let navItem = currentSection.querySelector("a");
 
-  // Set the active class on the nav item
-  navItem.classList.add("active");
+//   // Set the active class on the nav item
+//   navItem.classList.add("active");
 
-  // Remove the active class from any other nav items
-  let otherNavItems = document.querySelectorAll(".nav-item:not(.active)");
-  for (let i = 0; i < otherNavItems.length; i++) {
-    otherNavItems[i].classList.remove("active");
-  }
-});
+//   // Remove the active class from any other nav items
+//   let otherNavItems = document.querySelectorAll(".nav-item:not(.active)");
+//   for (let i = 0; i < otherNavItems.length; i++) {
+//     otherNavItems[i].classList.remove("active");
+//   }
+// });
   /* //////////////////////////////////////////////////////////////////// */
 
 
@@ -461,6 +461,8 @@ ourTeamSlider.addEventListener("touchend" , () => {
 
 myIndeicatore.forEach((indicator,index) => {
     indicator.addEventListener("click" , (e)=> {
+          clearInterval(myInterval);
+          myInterval = setInterval(autoPlay, 2000);
         counter = index;
         if (document.body.clientWidth  < 400) {
             myGap = ( parseFloat(getComputedStyle(rootElement).getPropertyValue('--gap'))*document.body.clientWidth)/100;
@@ -474,9 +476,6 @@ myIndeicatore.forEach((indicator,index) => {
         element.classList.remove("active")
     });
     e.target.classList.add("active");
-    // clearInterval(myInterval);
-    // myInterval = setInterval(autoPlay, 2000);
-
     }
     
     )
@@ -559,7 +558,7 @@ console.log(res)
   })
     .then((res) => res.json())
     .then((res) => {
-console.log(res)
+    console.log(res)
     })
   
  }
