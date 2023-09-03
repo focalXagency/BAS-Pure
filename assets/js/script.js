@@ -7,48 +7,47 @@ document.addEventListener("scroll" , () => {
     navBarlg.classList.remove("scrolled");
   }
 })
-/* const link1 = document.querySelector(".item1");
-const link2 = document.querySelector(".item2");
-const link3 = document.querySelector(".item3");
-const link4 = document.querySelector(".item4");
-const link5 = document.querySelector(".item5");
 
-link1.addEventListener("click", function () {
-  link1.classList.add("active");
-  link2.classList.remove("active");
-  link3.classList.remove("active");
-  link4.classList.remove("active");
-  link5.classList.remove("active");
-})
-link2.addEventListener("click", function () {
-  link1.classList.remove("active");
-  link2.classList.add("active");
-  link3.classList.remove("active");
-  link4.classList.remove("active");
-  link5.classList.remove("active");
-})
-link3.addEventListener("click", function () {
-  link1.classList.remove("active");
-  link2.classList.remove("active");
-  link3.classList.add("active");
-  link4.classList.remove("active");
-  link5.classList.remove("active");
-})
-link4.addEventListener("click", function () {
-  link1.classList.remove("active");
-  link2.classList.remove("active");
-  link3.classList.remove("active");
-  link4.classList.add("active");
-  link5.classList.remove("active");
-})
-link5.addEventListener("click", function () {
-  link1.classList.remove("active");
-  link2.classList.remove("active");
-  link3.classList.remove("active");
-  link4.classList.remove("active");
-  link5.classList.add("active");
-})
- */
+
+/* window.addEventListener('scroll', function() { 
+const aboutUS = document.querySelector("#aboutUS");
+const Services = document.querySelector("#Services");
+const Contact = document.querySelector("#Contact");
+
+const whoweare  = document.querySelector("#who-we-are");
+const latestpro  = document.querySelector("#FQ-latest-projects");
+const contact  = document.querySelector("#section3");
+  
+let scroll = window.scrollY ; 
+let heightsec = whoweare.offsetHeight;
+let heightsec2 = latestpro.offsetHeight;
+let heightsec3 = contact.offsetHeight;
+
+    if (heightsec < scroll && heightsec2 > scroll) {
+      aboutUS.classList.add("active");
+      Services.classList.remove("active");
+      Contact.classList.remove("active");
+     
+    }
+   else if(heightsec < scroll && heightsec2 < scroll){
+    aboutUS.classList.remove("active");
+    Services.classList.add("active");
+    Contact.classList.remove("active");
+   }
+    if (heightsec2 < scroll && heightsec3 > scroll) {
+      aboutUS.classList.remove("active");
+      Services.classList.add("active");
+      Contact.classList.remove("active");
+     
+    }
+   else if(heightsec2 < scroll && heightsec3 < scroll){
+    aboutUS.classList.remove("active");
+    Services.classList.remove("active");
+    Contact.classList.add("active");
+   }
+  }); */
+
+
 /* ************************************************************************** */
 /* what we do slider */
 
@@ -190,23 +189,41 @@ point5.addEventListener("click", function () {
   });
 });
 /* *************************************************************************** */
+/* md screen */
+const pointt1 = document.querySelector(".rm_dott1");
+const pointt2 = document.querySelector(".rm_dott2");
+const pointt3 = document.querySelector(".rm_dott3");
+const mdCard = document.querySelectorAll(".rm_whatwedo_containermd_cards");
 
-// document.querySelector("#my-nav-bar").addEventListener("scroll", function() {
-//   // Find the section that is currently in view
-//   let currentSection = document.querySelector("section:in-viewport");
+pointt1.addEventListener("click", function () {
+  pointt1.classList.add('rm_dotts_active');
+  pointt2.classList.remove('rm_dotts_active');
+  pointt3.classList.remove('rm_dotts_active');
+  mdCard.forEach((Element) => {
+    Element.style.transform = "translateX(0)";
+  });
+});
 
-//   // Find the corresponding nav item
-//   let navItem = currentSection.querySelector("a");
+pointt2.addEventListener("click", function () {
+  pointt1.classList.remove('rm_dotts_active');
+  pointt2.classList.add('rm_dotts_active');
+  pointt3.classList.remove('rm_dotts_active');
+  mdCard.forEach((Element) => {
+    Element.style.transform = "translateX(-549px)";
+    Element.style.transition = "1.5s";
+  });
+});
+pointt3.addEventListener("click", function () {
+  pointt1.classList.remove('rm_dotts_active');
+  pointt2.classList.remove('rm_dotts_active');
+  pointt3.classList.add('rm_dotts_active');
+  mdCard.forEach((Element) => {
+    Element.style.transform = "translateX(-1098px)";
+    Element.style.transition = "1.5s";
+  });
+});
 
-//   // Set the active class on the nav item
-//   navItem.classList.add("active");
 
-//   // Remove the active class from any other nav items
-//   let otherNavItems = document.querySelectorAll(".nav-item:not(.active)");
-//   for (let i = 0; i < otherNavItems.length; i++) {
-//     otherNavItems[i].classList.remove("active");
-//   }
-// });
   /* //////////////////////////////////////////////////////////////////// */
 
 
@@ -549,12 +566,12 @@ console.log(res)
 
  function subscribe(event) {
   event.preventDefault();
-  const emaill = document.querySelector("#email").value ; 
-  console.log({ "email" : emaill});
+  const emaill = document.querySelector("#emaill").value ; 
+  console.log({ "emaill" : emaill});
   fetch("https://back.black-analysis-solutions.com/api/store-subscribers", {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({"email": emaill}),
+    body: JSON.stringify({"emaill": emaill}),
   })
     .then((res) => res.json())
     .then((res) => {

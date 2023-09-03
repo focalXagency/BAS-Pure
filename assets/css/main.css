@@ -5,8 +5,10 @@
 :root {
   --black : #1C1B1F;
   --Dark-grey : #383838;
+  --dark-grey : #383838;
   --Dark-grey2 : #383838b8;
   --primaray  : #2A1BB8 ;
+  --primary  : #2A1BB8 ;
   --white : #FFFBFE;
   --white2 : #F4F4F4;
   --white3 : #FDFDFD;
@@ -37,6 +39,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+    /* outline: 1px solid red; */
   }
   
   body {
@@ -72,6 +75,7 @@
   font-size: 2rem;
   font-weight: 400;
   text-transform: capitalize;
+  width: max-content;
 }
 .JI_main_title .JI_main_title_p {
   color: var(--dark-grey);
