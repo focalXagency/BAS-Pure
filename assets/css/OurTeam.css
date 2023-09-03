@@ -2,13 +2,14 @@
     margin-top: 8rem;
     margin-bottom: -8%;
     position: relative;
-    
+
 }
 
 .JI_ourTeam .JI_main_title {
-background-color: var(--black);
+    padding: 4% 0 16.7%;
+    background-color: var(--black);
+    margin: 0;
 }
-
 
 .JI_ourTeam .JI_main_title_h1 {
     color: var(--white);
