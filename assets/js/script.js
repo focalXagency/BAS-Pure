@@ -9,43 +9,51 @@ document.addEventListener("scroll" , () => {
 })
 
 
-/* window.addEventListener('scroll', function() { 
+window.addEventListener('scroll', function() { 
+const home = document.querySelector("#item1");
 const aboutUS = document.querySelector("#aboutUS");
 const Services = document.querySelector("#Services");
 const Contact = document.querySelector("#Contact");
 
-const whoweare  = document.querySelector("#who-we-are");
-const latestpro  = document.querySelector("#FQ-latest-projects");
+const whoweare  = document.querySelector(".whoweare");
+const latestpro  = document.querySelector(".latestpro");
 const contact  = document.querySelector("#section3");
-  
 let scroll = window.scrollY ; 
-let heightsec = whoweare.offsetHeight;
-let heightsec2 = latestpro.offsetHeight;
-let heightsec3 = contact.offsetHeight;
+let heightsec = whoweare.offsetTop - 200;
+let heightsec2 = latestpro.offsetTop - 200;
+let heightsec3 = contact.offsetTop - 200;
 
+    if (heightsec > scroll) {
+      home.classList.add("active");
+      aboutUS.classList.remove("active");
+    }
     if (heightsec < scroll && heightsec2 > scroll) {
       aboutUS.classList.add("active");
       Services.classList.remove("active");
       Contact.classList.remove("active");
+      home.classList.remove("active");
      
     }
-   else if(heightsec < scroll && heightsec2 < scroll){
+    if(heightsec < scroll && heightsec2 < scroll){
     aboutUS.classList.remove("active");
     Services.classList.add("active");
     Contact.classList.remove("active");
+    home.classList.remove("active");
    }
     if (heightsec2 < scroll && heightsec3 > scroll) {
       aboutUS.classList.remove("active");
       Services.classList.add("active");
       Contact.classList.remove("active");
+      home.classList.remove("active");
      
     }
-   else if(heightsec2 < scroll && heightsec3 < scroll){
+   if( heightsec3 < scroll){
     aboutUS.classList.remove("active");
     Services.classList.remove("active");
     Contact.classList.add("active");
+    home.classList.remove("active");
    }
-  }); */
+  }); 
 
 
 /* ************************************************************************** */
