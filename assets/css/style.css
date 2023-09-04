@@ -46,9 +46,9 @@
   letter-spacing: -0.48px;
 }
 .rm_navbarLG_ul .active {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--white, #fffbfe);
-  font-weight: bolder;
+  font-weight: bold;
   border-bottom: 1px solid rgba(255, 251, 254, 0.7);
 }
 .rm_navbarLG_ul_li a {
@@ -176,7 +176,7 @@ a {
 .rm_whatwedo_card_img3 {
   width: 72.994px;
   height: 95.978px;
-  margin-bottom: 22px;
+  margin-bottom: 17px;
 }
 .rm_whatwedo_card_img5 {
   width: 99.485px;
@@ -223,20 +223,21 @@ a {
   position: relative;
 }
 .rm_dots_active {
-  width: 22px;
-    height: 22px;
+  width: 23px;
+    height: 23px;
   border-radius: 50%;
   border: 1px solid var(--primary, #2a1bb8);
   padding: 2px;
   background-color: #d2d2d2;
+  position: relative;
 }
 .rm_dots_active::before {
   font-family: 'slick';
   font-size: 46px;
   line-height: 20px;
   position: absolute;
-  top: -0.5px;
-  left: 1.6px;
+  top: 0.8px;
+  left: 2.7px;
     width: 13px;
     height: 13px;
   content: '•';
@@ -686,13 +687,14 @@ a {
   border: 1px solid var(--primary, #2a1bb8);
   padding: 2px;
   background-color: #d2d2d2;
+  position: relative;
 }
 .rm_dotts_active::before {
   font-family: 'slick';
   font-size: 46px;
   line-height: 20px;
   position: absolute;
-  top: 0.5px;
+  top: -1.5px;
   left: 1.6px;
     width: 13px;
     height: 13px;
@@ -789,7 +791,7 @@ a {
     width: 56.724px;
     height: 48.987px;
     flex-shrink: 0;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .rm_card_small_img3 {
     width: 65px;
@@ -828,20 +830,21 @@ a {
     position: relative;
   }
   .rm_dots_actives{
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
     border-radius: 50%;
     border: 1px solid var(--primary, #2a1bb8);
     padding: 2px;
     background-color: #d2d2d2;
+    position: relative;
   }
   .rm_dots_actives::before {
     font-family: 'slick';
-    font-size: 46px;
+    font-size: 44px;
     line-height: 20px;
     position: absolute;
-    top: -0.2px;
-    left: 0.3px;
+    top: -0.4px;
+    left: 1.3px;
       width: 13px;
       height: 13px;
     content: '•';
