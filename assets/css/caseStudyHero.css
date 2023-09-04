@@ -4,6 +4,9 @@
     height: 100vh;
     background-color: var(--black);
     position: relative;
+    background-image: url(./../img/points-back-ff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 } 
 .JI_caseStudy_hero .JI_caseStudy_hero_intro {
     width: 60.4%;

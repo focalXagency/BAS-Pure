@@ -9,6 +9,7 @@
 .rm_loginContainer {
     background-color: #1C1B1F;
     height: 100vh;
+    position: relative;
 }
 
 .rm_loginContainer .rm_backIcon {
@@ -241,13 +242,13 @@
         display: none !important;
     }
 
+    
     .rm_loginContainer .rm_imgDownMob {
         display: flex !important;
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 111px;
-        height: 86px;
+        width: 30%;
     }
 
 
