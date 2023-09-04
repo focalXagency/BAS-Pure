@@ -214,6 +214,9 @@
         width: 50%;
         margin: 0 auto;
         display: block;
+        text-align: center;
+        padding: 0% !important;
+
     }
     .JI_caseStudy_Section .JI_caseStudy_Section_categories .JI_caseStudy_Section_categories_li {
         margin-top: 1.5rem;
@@ -225,6 +228,7 @@
     }
     .JI_caseStudy_Section .JI_caseStudy_Section_categories .JI_caseStudy_Section_categories_li.appear {
         display: block;
+        width: 80% !important;
     }
     .JI_caseStudy_Section .JI_caseStudy_Section_categories .JI_caseStudy_Section_categories_first_li {
         display: flex;

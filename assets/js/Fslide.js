@@ -1,65 +1,57 @@
-  // start latest project
-  let sliderf = document.querySelector('.FQ-sliderf');
-  let slidesfq = document.querySelectorAll('.slide-FQ');
-  
-  
-  let activeSlide = 0;
-  
-  function showSlide(n) {
-    if (n < 0) {
-      n = 1;
-    } else if (n >= slidesfq.length) {
-      n = 0;
-    }
-    
-    for (var i = 0; i < slidesfq.length; i++) {
-      if (i === n) {
-        slidesfq[i].classList.add('active-ffq');
-      } else {
-        slidesfq[i].classList.remove('active-ffq');
-      }
-    }
-    
-    activeSlide = n;
-  }
-  
+
+  const cont1 = document.querySelector('.sun1')
+  const cont2 = document.querySelector('.sun2')
   var button1 = document.getElementById("button1");
   var button2 = document.getElementById("button2");
-  
-    button1.addEventListener("click", function() {
-      activeSlide = 0
-      showSlide(activeSlide);
-      activeBtn()
-    });
-  
-    button2.addEventListener("click", () => {
-      activeSlide = 1
-      showSlide(activeSlide);
-      activeBtn2()
-    });
-  
+  let sliderf = document.querySelector('.FQ-slider');
+
+  window.onload = function() {
+    button1.classList.add("btn-activet");
+  }
+
+  button1.addEventListener("click", function() {
+    activeBtn()
+    
+  });
+
+  button2.addEventListener("click", () => {
+    activeBtn2()
+    
+  });
+
     function activeBtn() {
-        button1.classList.add("btn-activet");
-        button2.classList.remove("btn-activet");
-      }
-  
-    function activeBtn2() {
-        button1.classList.remove("btn-activet");
-        button2.classList.add("btn-activet");
-      }
-  
-      setInterval(function() 
-      {
-        activeSlide = 0
-        showSlide(activeSlide);
-        activeBtn()
-      }, 3000
-      );
-      setInterval(function() 
-      {
-        activeSlide = 1
-        showSlide(activeSlide);
-        activeBtn2()
-      }, 6000
-      );
-  // end latest project
+      button1.classList.add("btn-activet");
+      button2.classList.remove("btn-activet");
+      cont1.classList.remove("active_One")
+      cont2.classList.remove("active_Tow")
+    }
+
+  function activeBtn2() {
+      button1.classList.remove("btn-activet");
+      button2.classList.add("btn-activet");
+      cont1.classList.add("active_One")
+      cont2.classList.add("active_Tow")
+    }
+
+    var interval = setInterval(function() {
+      activeBtn()
+        }, 4000);
+
+    var interval = setInterval(function() {
+      activeBtn2()
+        }, 8000);
+
+        document.getElementById("stop").addEventListener("mouseover", function() {
+          clearInterval(interval);
+        });
+
+        document.getElementById("stop").addEventListener("mouseout", function(){
+          var interval = setInterval(function() {
+            activeBtn()
+              }, 4000);
+      
+          var interval = setInterval(function() {
+            activeBtn2()
+              }, 8000);
+        });
+        
