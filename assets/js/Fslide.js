@@ -33,24 +33,25 @@
       cont2.classList.add("active_Tow")
     }
 
-    var interval = setInterval(function() {
+    let interval = setInterval(function() {
       activeBtn()
         }, 4000);
 
-    var interval = setInterval(function() {
+    let interval2 = setInterval(function() {
       activeBtn2()
         }, 8000);
 
         document.getElementById("stop").addEventListener("mouseover", function() {
           clearInterval(interval);
+          clearInterval(interval2);
         });
 
         document.getElementById("stop").addEventListener("mouseout", function(){
-          var interval = setInterval(function() {
+          interval = setInterval(function() {
             activeBtn()
               }, 4000);
       
-          var interval = setInterval(function() {
+          interval2 = setInterval(function() {
             activeBtn2()
               }, 8000);
         });
