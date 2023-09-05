@@ -79,7 +79,6 @@ footer .JI_footer_box_email_input
     color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
-    text-transform: capitalize;
     caret-color: #fff;
     width: 23.792vw;
     min-width: 260px;
@@ -137,8 +136,38 @@ footer .JI_footer_end_p {
     color: #FFF;
     font-size: 1.3rem;
     line-height: 141.4%;
-    padding: 5.3rem 5%;
+    padding: 1.3rem 5%;
 }
+
+footer .mk-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.3rem;
+    line-height: 141.4%;
+    padding: 2.3rem 5% 2.3rem 36%;
+  }
+  footer .mk-container p,
+  footer .mk-container span {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: var(--fw-400);
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  
+  footer .mk-container img {
+    margin-left: 8px;
+  }
+  
+  footer .mk-container .logo{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
 @media (max-width : 992px) {
     footer .JI_container {
         flex-direction: column;
@@ -182,5 +211,31 @@ footer .JI_footer_end_p {
     }
     footer .JI_footer_box_for_more {
         font-size: 1.4rem;
+    }
+    footer .mk-container {
+        width: max-content;
+        margin: 0 auto;
+        gap: 30px;
+        padding: 0;
+    }
+
+    footer .mk-container p,
+    footer .mk-container span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width : 692px){
+    footer .mk-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 440px){
+    footer .Copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -70,10 +70,6 @@
         font-size: 1rem;
     }
 
-}
-
-
-@media (max-width : 500px) {
     .JI_faq .JI_faq_container {
         grid-template-columns: 100%;
         row-gap: 1.6rem;
@@ -81,4 +77,6 @@
     .JI_faq .JI_faq_columns {
         gap: 1.6rem;
     }
+
 }
+

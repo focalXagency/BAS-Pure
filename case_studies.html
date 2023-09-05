@@ -1,78 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
-    <link rel="icon" href="./assets/img/logo.svg" type="image/icon type">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/img/logo.svg" type="image/icon type">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/caseStudyHero.css">
-    <link rel="stylesheet" href="./assets/css/PartnersSection.css">
-    <link rel="stylesheet" href="./assets/css/caseStudySection.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <title>BAS</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/caseStudyHero.css">
+  <link rel="stylesheet" href="./assets/css/PartnersSection.css">
+  <link rel="stylesheet" href="./assets/css/caseStudySection.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <title>BAS</title>
 </head>
+
 <body>
- <!-- navBar for larg screen -->
- <div class="header">
-  <nav class="rm_navbarLG_container">
-    <img src="./assets/img/logo.svg" alt="" class="rm_navbarSM_logo" />
-    <ul class="rm_navbarLG_ul">
-      <li id="item1" class="rm_navbarLG_ul_li"><a href="index.html">Home</a></li>
-      <li id="item2" class="rm_navbarLG_ul_li"><a href="index.html#who-we-are">About us</a></li>
-      <li id="item3" class="rm_navbarLG_ul_li"><a href="index.html#FQ-latest-projects">Services</a></li>
-      <li id="item4" class="rm_navbarLG_ul_li active"><a href="case_studies.html">Case studies</a></li>
-      <li id="item5" class="rm_navbarLG_ul_li"><a href="index.html#section3">Contact us</a></li>
-    </ul>
-    <a href="login.html"><button class="rm_navbarLG_btn">log in</button></a>
-  </nav>
-</div>
+  <!-- navBar for larg screen -->
+  <div class="header">
+    <nav class="rm_navbarLG_container">
+      <img src="./assets/img/logo.svg" alt="" class="rm_navbarSM_logo" />
+      <ul class="rm_navbarLG_ul">
+        <li id="item1" class="rm_navbarLG_ul_li"><a href="index.html">Home</a></li>
+        <li id="item2" class="rm_navbarLG_ul_li"><a href="index.html#who-we-are">About us</a></li>
+        <li id="item3" class="rm_navbarLG_ul_li"><a href="index.html#FQ-latest-projects">Services</a></li>
+        <li id="item4" class="rm_navbarLG_ul_li active"><a href="case_studies.html">Case studies</a></li>
+        <li id="item5" class="rm_navbarLG_ul_li"><a href="index.html#section3">Contact us</a></li>
+      </ul>
+      <a href="login.html"><button class="rm_navbarLG_btn">log in</button></a>
+    </nav>
+  </div>
   <!-- ************************************************************************************************* -->
   <!-- navBar for small screen -->
   <nav class="navbar rm_navbarSM_container fixed-top">
     <div class="container-fluid">
       <img src="./assets/img/logo.svg" alt="" class="rm_navbarSM_logo" />
-      <button
-        class="navbar-toggler rm_navbarSM_btn"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler rm_navbarSM_btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="offcanvas rm_navbarSM_offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
+      <div class="offcanvas rm_navbarSM_offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <img src="./assets/img/logo.svg" alt="" class="rm_navbarSM_logo" />
-          <button
-            type="button"
-            class="btn-x"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          >X</button>
+          <button type="button" class="btn-x" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav rm_navbarSM_ul">
             <li class="nav-item rm_navbarSM_ul_li">
-              <a class="nav-link active2" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link active2" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item rm_navbarSM_ul_li">
               <a class="nav-link" href="index.html#who-we-are">About us</a>
@@ -88,26 +71,29 @@
             </li>
           </ul>
           <div class="rm_navBar_login_group">
-           <img src="./assets/img/login.svg" alt="" class="rm_navBar-login" />
-           <a href="login.html"><p class="rm_navBar_login_text">Log in</p></a>
+            <img src="./assets/img/login.svg" alt="" class="rm_navBar-login" />
+            <a href="login.html">
+              <p class="rm_navBar_login_text">Log in</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-    <!-- Start Hero Section -->
-    <div class="JI_caseStudy_hero">
-        <div class="JI_caseStudy_hero_intro">
-            <h1 class="JI_caseStudy_hero_h1">Case studies</h1>
-            <p class="JI_caseStudy_hero_p">A specialized business consultancy, committed to supporting businesses of all sizes and industries to achieve their success</p>
-            <img class="JI_caseStudy_hero_img" src="./assets/img/heroCourner.png"></img>
-        </div>
+  <!-- Start Hero Section -->
+  <div class="JI_caseStudy_hero">
+    <div class="JI_caseStudy_hero_intro">
+      <h1 class="JI_caseStudy_hero_h1">Case studies</h1>
+      <p class="JI_caseStudy_hero_p">A specialized business consultancy, committed to supporting businesses of all sizes
+        and industries to achieve their success</p>
+      <img class="JI_caseStudy_hero_img" src="./assets/img/heroCourner.png"></img>
     </div>
-    <!-- End Hero Section -->
+  </div>
+  <!-- End Hero Section -->
 
 
-     <!-- Start Customers Section -->
+  <!-- Start Customers Section -->
 
   <section class="JI_Partners JI_Customers">
     <div class="JI_main_title">
@@ -126,36 +112,36 @@
         <img src="./assets/img/samsung.png" alt="Samsung logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/cocacola.png" alt="Coca-Cola logo">
-      </div>
-      <div class="JI_Partners_slider_img">
-      <img src="./assets/img/citi.png" alt="Citi logo">
-      </div>
-      <div class="JI_Partners_slider_img">
-      <img src="./assets/img/hyundai.png" alt="Hyundai Motor Group logo">
-      </div>
-
-        <div class="JI_Partners_slider_img">
-          <img src="./assets/img/google.png" alt="Google logo">
-        </div>
-        <div class="JI_Partners_slider_img">
-          <img src="./assets/img/samsung.png" alt="Samsung logo">
-        </div>
-        <div class="JI_Partners_slider_img">
         <img src="./assets/img/cocacola.png" alt="Coca-Cola logo">
-        </div>
+      </div>
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/citi.png" alt="Citi logo">
+      </div>
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/hyundai.png" alt="Hyundai Motor Group logo">
+      </div>
+
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/google.png" alt="Google logo">
+      </div>
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/samsung.png" alt="Samsung logo">
+      </div>
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/cocacola.png" alt="Coca-Cola logo">
+      </div>
 
 
-        <div class="JI_Partners_slider_img">
-          <img src="./assets/img/citi.png" alt="Citi logo">
-          </div>
-          <div class="JI_Partners_slider_img">
-          <img src="./assets/img/hyundai.png" alt="Hyundai Motor Group logo">
-          </div>
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/citi.png" alt="Citi logo">
+      </div>
+      <div class="JI_Partners_slider_img">
+        <img src="./assets/img/hyundai.png" alt="Hyundai Motor Group logo">
+      </div>
 
     </div>
 
-    
+
 
     <div class="JI_Partners_slider">
       <div class="JI_Partners_slider_img">
@@ -165,13 +151,13 @@
         <img src="./assets/img/nike.png" alt="Samsung logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/shell.png" alt="Coca-Cola logo">
+        <img src="./assets/img/shell.png" alt="Coca-Cola logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/tmall.png" alt="Citi logo">
+        <img src="./assets/img/tmall.png" alt="Citi logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/tiktok.png" alt="Hyundai Motor Group logo">
+        <img src="./assets/img/tiktok.png" alt="Hyundai Motor Group logo">
       </div>
 
       <div class="JI_Partners_slider_img">
@@ -181,13 +167,13 @@
         <img src="./assets/img/nike.png" alt="Samsung logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/shell.png" alt="Coca-Cola logo">
+        <img src="./assets/img/shell.png" alt="Coca-Cola logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/tmall.png" alt="Citi logo">
+        <img src="./assets/img/tmall.png" alt="Citi logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/tiktok.png" alt="Hyundai Motor Group logo">
+        <img src="./assets/img/tiktok.png" alt="Hyundai Motor Group logo">
       </div>
     </div>
 
@@ -200,13 +186,13 @@
         <img src="./assets/img/netflix.png" alt="Samsung logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/healthcare.png" alt="Coca-Cola logo">
+        <img src="./assets/img/healthcare.png" alt="Coca-Cola logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/lowes.png" alt="Citi logo">
+        <img src="./assets/img/lowes.png" alt="Citi logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/instagram.png" alt="Hyundai Motor Group logo">
+        <img src="./assets/img/instagram.png" alt="Hyundai Motor Group logo">
       </div>
 
       <div class="JI_Partners_slider_img">
@@ -216,42 +202,42 @@
         <img src="./assets/img/netflix.png" alt="Samsung logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/healthcare.png" alt="Coca-Cola logo">
+        <img src="./assets/img/healthcare.png" alt="Coca-Cola logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/lowes.png" alt="Citi logo">
+        <img src="./assets/img/lowes.png" alt="Citi logo">
       </div>
       <div class="JI_Partners_slider_img">
-      <img src="./assets/img/instagram.png" alt="Hyundai Motor Group logo">
+        <img src="./assets/img/instagram.png" alt="Hyundai Motor Group logo">
       </div>
 
     </div>
 
 
-    
+
   </section>
   <!-- End Customers Section -->
 
   <!-- Start Case Sections -->
   <section class="JI_caseStudy_Section">
-        <ul class="JI_caseStudy_Section_categories">
-            <li class="JI_caseStudy_Section_categories_first_li">Order By</li>
-            <li data-cat="all" class="JI_caseStudy_Section_categories_li active">All</li>
-            <li data-cat="technology" class="JI_caseStudy_Section_categories_li">technology</li>
-            <li data-cat="commercial" class="JI_caseStudy_Section_categories_li">commercial</li>
-            <li data-cat="industrial" class="JI_caseStudy_Section_categories_li">industrial</li>
-        </ul>
+    <ul class="JI_caseStudy_Section_categories">
+      <li class="JI_caseStudy_Section_categories_first_li">Order By</li>
+      <li data-cat="all" class="JI_caseStudy_Section_categories_li active">All</li>
+      <li data-cat="technology" class="JI_caseStudy_Section_categories_li">technology</li>
+      <li data-cat="commercial" class="JI_caseStudy_Section_categories_li">commercial</li>
+      <li data-cat="industrial" class="JI_caseStudy_Section_categories_li">industrial</li>
+    </ul>
 
-        <div class="JI_caseStudy_Section_cards_container JI_container">
-          </div>
+    <div class="JI_caseStudy_Section_cards_container JI_container">
+    </div>
 
 
-          <div class="JI_caseStudy_Section__indicators">
-            <ul class="JI_caseStudy_Section__indicators_ul">
-            </ul>
-          </div>
+    <div class="JI_caseStudy_Section__indicators">
+      <ul class="JI_caseStudy_Section__indicators_ul">
+      </ul>
+    </div>
   </section>
-  
+
   <!-- End Case Sections -->
 
 
@@ -274,11 +260,11 @@
       <div class="JI_footer_box second">
         <h1 class="JI_footer_box_title">SUBSCRIBE</h1>
         <h2 class="JI_footer_box_subtitle">Stay in the loop with our newsletter </h2>
-          <form action="" class="JI_footer_form" onsubmit="subscribe(event)">
-            <img class="JI_footer_form_mail_icon" src="./assets/img/mail.svg" alt="mail logo">
-            <input id="emaill" class="JI_footer_box_email_input" type="email" name="email" placeholder="e-mail">
-            <button class="JI_footer_box_submit" >submit</button>
-          </form>
+        <form action="" class="JI_footer_form" onsubmit="subscribe(event)">
+          <img class="JI_footer_form_mail_icon" src="./assets/img/mail.svg" alt="mail logo">
+          <input id="emaill" class="JI_footer_box_email_input" type="email" name="email" placeholder="e-mail">
+          <button class="JI_footer_box_submit">submit</button>
+        </form>
       </div>
 
       <div class="JI_footer_box third">
@@ -291,21 +277,38 @@
     </div>
     <div class="JI_footer_end">
       <div class="JI_footer_end_img">
-      <img class="JI_footer_end_img_large" src="./assets/img/corner.png" alt="">
-      <img class="JI_footer_end_img_mobile" src="./assets/img/flippedcorner.png" alt="">
+        <img class="JI_footer_end_img_large" src="./assets/img/corner.png" alt="">
+        <img class="JI_footer_end_img_mobile" src="./assets/img/flippedcorner.png" alt="">
       </div>
       <p class="JI_footer_end_p">Registration date, Terms and Conditions</p>
     </div>
+    <div class="mk-container">
+      <div class="logo">
+        <span data-tr="footer-End-span">created by : </span>
+        <a href="https://focal-x.com/" target="_blank">
+          <img src="./assets/img/focal X LOGO.svg" alt="focal X company logo">
+        </a>
+      </div>
+      <p data-tr="footer-End-p" class="Copyright"><span>Copyright &copy; 2021 , 2023 Focal X .</span> <span>All rights reserveds</span></p>
+    </div>
   </footer>
   <!-- End of footer -->
-
-   <!-- bootstrap -->
-   <script
-   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-   crossorigin="anonymous"
- ></script>
- <script src="./assets/js/script.js"></script>
+  <div class="blur mkblur" style="visibility: hidden;"></div>
+  <div id="popUp" class="popUp" style="visibility:hidden;">
+    <img src="./assets/img/true.svg" alt="">
+    <p class='popUp_text' data-tr="Thank">
+      Thank you for trusting us.
+    </p>
+    <div id="popf">
+      <button class="close" id="closePopUp" data-tr="Close">Close</button>
+    </div>
+  </div>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
   <script src="./assets/js/caseStudySection.js"></script>
 </body>
+
 </html>
